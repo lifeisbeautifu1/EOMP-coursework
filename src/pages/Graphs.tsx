@@ -32,7 +32,11 @@ const Graphs = () => {
         margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
       >
         <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="x" allowDuplicatedCategory={false}>
+        <XAxis
+          dataKey="x"
+          tickFormatter={dataFormater}
+          allowDuplicatedCategory={false}
+        >
           <Label value="x" position="insideBottomRight" />
         </XAxis>
         <YAxis tickFormatter={dataFormater}>
@@ -63,7 +67,11 @@ const Graphs = () => {
         margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
       >
         <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="z" allowDuplicatedCategory={false}>
+        <XAxis
+          tickFormatter={dataFormater}
+          dataKey="z"
+          allowDuplicatedCategory={false}
+        >
           <Label value="z" position="insideBottomRight" />
         </XAxis>
         <YAxis tickFormatter={dataFormater}>

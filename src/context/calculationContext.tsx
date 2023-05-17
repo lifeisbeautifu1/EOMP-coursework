@@ -52,7 +52,7 @@ const CalculationContextProvider: React.FC<CalculationContextProviderProps> = ({
 
     interval.forEach((z, i) => {
       data = [];
-      for (let x = 0; x <= l; ++x) {
+      for (let x = 0; x <= l; x += 0.1) {
         let R = 0;
         let IM = 0;
         for (let j = 1; j <= t; ++j) {
@@ -85,7 +85,7 @@ const CalculationContextProvider: React.FC<CalculationContextProviderProps> = ({
 
     xInterval.forEach((x, i) => {
       data = [];
-      for (let z = 0; z <= L; ++z) {
+      for (let z = 0; z <= L; z += 0.1) {
         let R = 0;
         let IM = 0;
         for (let j = 1; j <= t; ++j) {
